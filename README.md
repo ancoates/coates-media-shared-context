@@ -15,7 +15,7 @@ Single source of truth for content consumed by multiple Coates Media surfaces.
 | Consumer | Mount path in consumer | Used for |
 |---|---|---|
 | `coates-media-ops` | `global-context/` | AI agent context, decision-making, registries |
-| `coatesmedia-web` | `AIContext/` + `MetaApp_Submission/` | Astro build inputs — renders brand info + live legal pages on `coatesmedia.co` |
+| `coatesmedia-web` | `shared-context/` | Astro build inputs — renders brand info + (Sprint 2) live legal pages on `coatesmedia.co` |
 
 ## Update workflow
 
@@ -40,6 +40,6 @@ Drift was inevitable. Now there's one source. The legacy local mirrors get archi
 ## What does NOT belong here
 
 - Anything client-specific (FADS brand voice, FADS Zoho schema, FADS attribution logic) — that lives in `coates-media-ops/clients/<client>/`
-- Credentials, API tokens, secrets — never. This repo is private but treat it as if it weren't.
+- Credentials, API tokens, secrets — never. **This repo is public** (load-bearing for Cloudflare Pages submodule clones in `coatesmedia-web`; see `coates-media-ops/agents/platform-architect/playbooks/shared-context-sync.md` for the full reasoning). Treat anything pushed here as world-readable.
 - Agent-specific playbooks — those live in `coates-media-ops/agents/<agent>/`
 - Infrastructure code — that lives in `coates-media-ops/common/`
