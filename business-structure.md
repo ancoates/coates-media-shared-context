@@ -20,9 +20,6 @@
 - Screen printing / merch business
 - _(fill in: entity status, role in Coates Media portfolio)_
 
-### AKquire
-- Marketing + tech hybrid startup, co-built with _(fill in)_
-- _(fill in: entity status, current state, role relative to Coates Media)_
 
 ## Infrastructure owned by Coates Media (shared across clients)
 
