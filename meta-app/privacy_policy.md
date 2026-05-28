@@ -209,7 +209,7 @@ We may update this Privacy Policy periodically. The "Last Updated" date at the t
 
 **What it does:** Lets visitors send a project brief through the form at https://coatesmedia.co/contact.
 
-**Data collected:** Name, email, and the details you choose to include (company, budget band, project scope, timeline). Technical metadata (browser user agent, referring page) for spam prevention and context.
+**Data collected:** Name, email, and the details you choose to include (company, budget band, project scope, timeline). We do not store additional technical metadata with the submission beyond what Section 3 describes for general web analytics.
 
 **Data flow:** Browser → `coatesmedia.co` → Coates Media automation at `ops.coatesmedia.co` → stored in Coates Media's own database (on our infrastructure) and Coates Media's CRM (Zoho CRM). Encrypted in transit and at rest.
 
