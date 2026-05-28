@@ -1,6 +1,6 @@
 # Terms of Service — Coates Media
 
-**Last Updated:** 2026-05-07
+**Last Updated:** 2026-05-28
 
 These Terms of Service ("Terms") govern your use of services provided by **Coates Media LLC** ("we," "us," or "our"), including our websites, marketing automation services, and third-party platform applications we operate (collectively, the "Services").
 
@@ -65,7 +65,7 @@ For app-specific scope (e.g., the eleven Fred Astaire Dance Studios Pages connec
 
 ## 6. Data handling
 
-Personal data flowing through the Services is governed by our Privacy Policy at https://coatesmedia.co/privacy. The authoritative copy of all client lead data lives in the relevant client CRM (e.g., Zoho CRM). Coates Media's own infrastructure does not retain personal data beyond brief transit windows, except where required for legitimate business purposes (e.g., operational logs for 30 days).
+Personal data flowing through the Services is governed by our Privacy Policy at https://coatesmedia.co/privacy. The authoritative copy of all client lead data lives in the relevant client CRM (e.g., Zoho CRM). Coates Media's own infrastructure does not retain client lead data beyond brief transit windows, except where required for legitimate business purposes (e.g., operational logs for 30 days). Personal data you submit directly to Coates Media — for example, through the contact form on https://coatesmedia.co — is first-party data we control and store as described in the Privacy Policy.
 
 ---
 

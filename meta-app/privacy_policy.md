@@ -1,6 +1,6 @@
 # Privacy Policy — Coates Media
 
-**Last Updated:** 2026-05-07
+**Last Updated:** 2026-05-28
 
 This Privacy Policy describes how **Coates Media LLC** ("we," "us," or "our") collects, uses, and protects personal information across our websites, applications, and services, including any third-party platform applications we operate (collectively, the "Services").
 
@@ -74,7 +74,8 @@ We do not sell personal data. We do not share lead data with advertisers, data b
 | Type | Where |
 |---|---|
 | Lead data routed to client CRMs | Stored in the client's CRM (e.g., Zoho CRM for FADS franchise locations) |
-| In-transit processing | Coates Media automation infrastructure at `ops.coatesmedia.co` (transient, less than 60 seconds, no persistent storage) |
+| Client lead data in-transit | Coates Media automation at `ops.coatesmedia.co` — transient for lead data routed to client CRMs (less than 60 seconds, no persistent storage) |
+| Contact-form submissions from coatesmedia.co | First-party data we control — stored in Coates Media's own database on our infrastructure (`ops.coatesmedia.co`) and Coates Media's CRM (Zoho CRM) |
 | Coates Media operational records | U.S.-based cloud providers (Zoho, Mercury, Stripe) |
 
 All data is encrypted in transit (HTTPS / TLS) and at rest using each provider's standard encryption. Sub-processors include Zoho Corporation (CRM), and on a per-service basis as listed in the Addenda.
@@ -88,6 +89,7 @@ All data is encrypted in transit (HTTPS / TLS) and at rest using each provider's
 | In-transit through `ops.coatesmedia.co` | < 60 seconds (no persistent storage) |
 | Operational logs (n8n execution history) | 30 days, then auto-purged |
 | Lead records in client CRMs | Per client's retention policy; typically until the lead is converted, marked Lost, or deletion is requested |
+| Contact-form leads (coatesmedia.co) | Retained while we evaluate and respond to your inquiry, and for a reasonable follow-up period; deleted on request (see Section 9) |
 | Customer / business records | Up to 7 years for legitimate business purposes (tax, contracts, regulatory compliance) |
 
 If a Lead is converted to a Contact (e.g., a paying student at a FADS studio), the record is retained for the duration of the customer relationship and a reasonable period thereafter, consistent with U.S. business records norms.
@@ -195,6 +197,25 @@ We may update this Privacy Policy periodically. The "Last Updated" date at the t
 **Authorized Pages:** Currently the eleven FADS Pages listed in the Application's Terms of Service. Additional Pages require explicit authorization.
 
 **Deletion process specific to this app:** See https://coatesmedia.co/fads-lead-sync/data-deletion. Includes Meta Data Deletion Callback support at `https://ops.coatesmedia.co/webhook/fads.meta.deletion`.
+
+---
+
+## B. coatesmedia.co Contact Form
+
+| Item | Detail |
+|---|---|
+| Operating entity | Coates Media LLC |
+| Role | Data controller — this is Coates Media's own first-party data, not client lead data |
+
+**What it does:** Lets visitors send a project brief through the form at https://coatesmedia.co/contact.
+
+**Data collected:** Name, email, and the details you choose to include (company, budget band, project scope, timeline). Technical metadata (browser user agent, referring page) for spam prevention and context.
+
+**Data flow:** Browser → `coatesmedia.co` → Coates Media automation at `ops.coatesmedia.co` → stored in Coates Media's own database (on our infrastructure) and Coates Media's CRM (Zoho CRM). Encrypted in transit and at rest.
+
+**Purpose:** To respond to your inquiry. We do not add you to marketing lists without your separate consent, and we do not share contact-form submissions with third parties except the sub-processors that host our database and CRM.
+
+**Retention & deletion:** Retained while we handle your inquiry and for a reasonable follow-up period (see Section 6); deleted on request per https://coatesmedia.co/data-deletion.
 
 ---
 
