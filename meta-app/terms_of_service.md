@@ -146,4 +146,22 @@ We may update these Terms from time to time. Material changes will be communicat
 
 ---
 
+## B. Google Ads API Integration
+
+| Item | Detail |
+|---|---|
+| Google Cloud project | augmented-web-437318-e5 |
+| OAuth 2.0 client | coates-media-ops-n8n (Web application) |
+| Operating entity | Coates Media LLC |
+
+**Scope of service:** With the client's Google OAuth authorization, Coates Media operates an agency automation platform that monitors campaign performance, detects changes, produces performance reporting, and applies approved campaign updates (budget, bid, status, targeting) through an approval queue, across the Google Ads accounts the client connects. Access is limited to the accounts the client authorizes and is revocable by the client at any time.
+
+**Authorized accounts:** The Services act only on the Google Ads accounts a client explicitly connects via Google OAuth. Adding accounts requires the client's authorization.
+
+**Approval and client responsibility:** Automated campaign updates are staged and applied only after approval through Coates Media's approval queue. The client remains responsible for reviewing and approving changes to their campaigns.
+
+**Service-specific limitation of liability:** Liability for the Google Ads API integration is limited to the lesser of $100 or the fees paid for the Service.
+
+---
+
 *These terms are published at https://coatesmedia.co/terms*

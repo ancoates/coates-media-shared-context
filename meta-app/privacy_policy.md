@@ -26,9 +26,10 @@ For privacy questions, requests, or to exercise your rights under this policy, e
 This policy applies to:
 
 - The Coates Media website (`coatesmedia.co`) and any subdomains we operate
-- Marketing automation services we provide to our clients (currently including Fred Astaire Dance Studios franchise locations)
+- Marketing automation and advertising services we provide to our clients
 - Third-party platform applications we operate, including but not limited to:
   - **FADS Lead Sync** — Meta Platforms application (App ID: 963876983267406) that processes Lead Ad submissions for Fred Astaire Dance Studios franchise locations
+  - **Google Ads API integration** — a Google Cloud OAuth application (project `augmented-web-437318-e5`) Coates Media operates as an agency automation platform to monitor, report on, and apply approved updates to client Google Ads campaigns across the accounts our clients authorize
 
 Where an individual app or service has data flows or retention practices that differ from this master policy, those differences are described in the Addenda below.
 
@@ -60,7 +61,7 @@ We do not collect: government identifiers, payment account numbers, biometric da
 
 We process personal data to:
 
-1. Deliver the services our clients hire us to provide (e.g., routing leads to the correct studio CRM, attributing marketing performance, supporting customer follow-up)
+1. Deliver the services our clients hire us to provide (e.g., routing leads to the correct client CRM, attributing marketing performance, supporting customer follow-up)
 2. Operate and improve our websites and applications
 3. Communicate with you about Coates Media services if you've expressed interest
 4. Comply with legal obligations (tax records, regulatory inquiries, etc.)
@@ -73,7 +74,7 @@ We do not sell personal data. We do not share lead data with advertisers, data b
 
 | Type | Where |
 |---|---|
-| Lead data routed to client CRMs | Stored in the client's CRM (e.g., Zoho CRM for FADS franchise locations) |
+| Lead data routed to client CRMs | Stored in the client's CRM (e.g., Zoho CRM) |
 | Client lead data in-transit | Coates Media automation at `ops.coatesmedia.co` — transient for lead data routed to client CRMs (less than 60 seconds, no persistent storage) |
 | Contact-form submissions from coatesmedia.co | First-party data we control — stored in Coates Media's own database on our infrastructure (`ops.coatesmedia.co`) and Coates Media's CRM (Zoho CRM) |
 | Coates Media operational records | U.S.-based cloud providers (Zoho, Mercury, Stripe) |
@@ -92,7 +93,7 @@ All data is encrypted in transit (HTTPS / TLS) and at rest using each provider's
 | Contact-form leads (coatesmedia.co) | Retained while we evaluate and respond to your inquiry, and for a reasonable follow-up period; deleted on request (see Section 9) |
 | Customer / business records | Up to 7 years for legitimate business purposes (tax, contracts, regulatory compliance) |
 
-If a Lead is converted to a Contact (e.g., a paying student at a FADS studio), the record is retained for the duration of the customer relationship and a reasonable period thereafter, consistent with U.S. business records norms.
+If a Lead is converted to a Contact (e.g., a paying customer for one of our clients), the record is retained for the duration of the customer relationship and a reasonable period thereafter, consistent with U.S. business records norms.
 
 ---
 
@@ -151,7 +152,7 @@ We follow industry-standard practices but cannot guarantee absolute security. If
 
 Our services are not intended for use by individuals under 13 years of age. We do not knowingly collect data from children under 13. If we discover such collection has occurred inadvertently, we will delete it.
 
-Some of our clients (e.g., dance studios) offer programs for children 13+; in those cases, ad lead forms are completed by a parent or guardian on the child's behalf, and the data we receive is the parent's contact information.
+Some of our clients offer programs for individuals aged 13+ (e.g., youth or family activity programs); in those cases, ad lead forms are completed by a parent or guardian on the child's behalf, and the data we receive is the parent's contact information.
 
 ---
 
@@ -216,6 +217,30 @@ We may update this Privacy Policy periodically. The "Last Updated" date at the t
 **Purpose:** To respond to your inquiry. We do not add you to marketing lists without your separate consent, and we do not share contact-form submissions with third parties except the sub-processors that host our database and CRM.
 
 **Retention & deletion:** Retained while we handle your inquiry and for a reasonable follow-up period (see Section 6); deleted on request per https://coatesmedia.co/data-deletion.
+
+---
+
+## C. Google Ads API Integration
+
+| Item | Detail |
+|---|---|
+| Google Cloud project | augmented-web-437318-e5 |
+| OAuth 2.0 client | coates-media-ops-n8n (Web application) |
+| Operating entity | Coates Media LLC |
+| Intended use | Agency automation platform — automated campaign monitoring, change detection, performance reporting, and approved campaign updates (budget, bid, status, targeting) via an approval queue |
+| Applies to | All clients whose Google advertising Coates Media manages (general-purpose, not client-specific) |
+
+**What it does:** With the client's authorization (Google OAuth), Coates Media connects to the client's Google Ads account to **read** performance data for monitoring, change detection, and reporting, and to **apply approved campaign updates** (budget, bid, status, targeting) on the client's behalf — changes are staged through an approval queue before they are written. This integration is general-purpose across all clients for whom we run Google advertising (unlike the FADS Lead Sync Meta app, which is specific to one client).
+
+**Google data accessed (OAuth scope):** `https://www.googleapis.com/auth/adwords` — read and management (write) access to the authorizing account's Google Ads data, including campaign, ad group, ad, and keyword performance, account structure, conversion and attribution metrics, and related user-level advertising data.
+
+**What we capture and store:** Campaign performance metrics, captured into Coates Media's analytics database (Postgres on `ops.coatesmedia.co`) and Zoho Analytics for client reporting and historical comparison. Retained while the client engagement is active and for a reasonable period thereafter for reporting continuity. Encrypted in transit and at rest.
+
+**Limited Use:** Coates Media's access to, and use of, information received from Google APIs adheres to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. We do not use Google user data for personalized advertising, sell it, or transfer it except to provide or improve the service, to comply with law, or in connection with a merger or acquisition with appropriate notice.
+
+**Authorization & revocation:** Access is granted by the client via Google OAuth and is limited to the Google Ads accounts the client authorizes. The client may revoke access at any time at https://myaccount.google.com/permissions.
+
+**Deletion:** To request deletion of data Coates Media holds from this integration, see https://coatesmedia.co/data-deletion or email ancoates@coatesmedia.co.
 
 ---
 
