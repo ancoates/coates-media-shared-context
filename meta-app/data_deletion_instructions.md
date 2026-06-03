@@ -1,14 +1,14 @@
-# Data Deletion Instructions — FADS Lead Sync
+# Data Deletion Instructions — Coates Media Connect
 
-**Last Updated:** 2026-05-07
+**Last Updated:** 2026-06-03
 
-This page describes how to request deletion of personal data processed by **FADS Lead Sync** (Meta App ID: 963876983267406).
+This page describes how to request deletion of personal data processed by **Coates Media Connect** (Meta App ID: 963876983267406), the Meta Platforms application Coates Media operates to capture Lead Ad submissions on behalf of the client businesses it manages.
 
 ---
 
 ## What this covers
 
-This deletion process applies to lead data submitted through Meta (Facebook or Instagram) Lead Ad forms associated with Fred Astaire Dance Studios Pages. If you submitted such a form and want your information removed from our systems, follow the steps below.
+This deletion process applies to lead data submitted through Meta (Facebook or Instagram) Lead Ad forms on Pages Coates Media manages on behalf of its clients (currently Fred Astaire Dance Studios locations). If you submitted such a form and want your information removed from our systems, follow the steps below.
 
 ---
 
@@ -16,7 +16,7 @@ This deletion process applies to lead data submitted through Meta (Facebook or I
 
 Send an email to **ancoates@coatesmedia.co** with:
 
-- **Subject line:** `Data Deletion Request — FADS Lead Sync`
+- **Subject line:** `Data Deletion Request — Coates Media Connect`
 - **Body must include:**
   - The email address you used when submitting the lead form
   - Your full name as submitted on the form (helps us locate the record if multiple submissions share the email)
@@ -31,8 +31,8 @@ You do not need to provide a reason. We will not contact you to verify or persua
 
 Within **30 days** of receiving your verified request, we will:
 
-1. **Delete your Lead record from the FADS Zoho CRM**, including: name, email, phone, all form responses, and any notes or attribution data associated with your record
-2. **Notify the relevant FADS studio** that the record has been removed so they no longer attempt outreach
+1. **Delete your Lead record from the relevant client's Zoho CRM**, including: name, email, phone, all form responses, and any notes or attribution data associated with your record
+2. **Notify the relevant client location** that the record has been removed so they no longer attempt outreach
 3. **Confirm completion** by replying to your request email
 
 ---
@@ -44,8 +44,8 @@ The following are outside our control and require separate requests:
 | Data | Where to request deletion |
 |---|---|
 | The Meta Lead Ad submission record itself | Submit a Meta data deletion request via your Facebook or Instagram account settings — Settings → Your Information → Download Your Information / Delete Your Information |
-| Email or text messages a FADS studio sent to you using your information | Reply STOP to text messages, or unsubscribe from any email — and email the relevant studio directly |
-| Records held by individual FADS studios in their own systems if they exported your data | Contact the studio directly |
+| Email or text messages a client location sent to you using your information | Reply STOP to text messages, or unsubscribe from any email — and email the relevant location directly |
+| Records held by individual client locations in their own systems if they exported your data | Contact the location directly |
 
 ---
 
@@ -57,9 +57,9 @@ If we cannot verify the request, we will respond explaining why and request addi
 
 ---
 
-## What if I never submitted a FADS lead form?
+## What if I never submitted a lead form?
 
-If you receive correspondence from a FADS studio but do not recall submitting any form, you may still request data deletion using the steps above — we will search by email and remove any matching records. Note that if your information was provided to a studio through a different channel (in person, phone call, referral), we may not have a record to delete via this process; in that case, please contact the studio directly.
+If you receive correspondence from one of our client locations but do not recall submitting any form, you may still request data deletion using the steps above — we will search by email and remove any matching records. Note that if your information was provided to a location through a different channel (in person, phone call, referral), we may not have a record to delete via this process; in that case, please contact the location directly.
 
 ---
 
@@ -85,10 +85,10 @@ Users can check the status of automated deletion via Meta's user-facing deletion
 For questions about data deletion or this process:
 
 - **Email:** ancoates@coatesmedia.co
-- **Subject line:** `Data Deletion Question — FADS Lead Sync`
+- **Subject line:** `Data Deletion Question — Coates Media Connect`
 
-For general privacy questions, see our Privacy Policy at https://coatesmedia.co/privacy. The FADS Lead Sync application is covered as Addendum A within that master policy.
+For general privacy questions, see our Privacy Policy at https://coatesmedia.co/privacy. The Coates Media Connect application is covered as Addendum A within that master policy.
 
 ---
 
-*These instructions are published at https://coatesmedia.co/fads-lead-sync/data-deletion*
+*These instructions are published at https://coatesmedia.co/data-deletion*

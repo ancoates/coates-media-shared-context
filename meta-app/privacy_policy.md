@@ -1,6 +1,6 @@
 # Privacy Policy — Coates Media
 
-**Last Updated:** 2026-05-28
+**Last Updated:** 2026-06-03
 
 This Privacy Policy describes how **Coates Media LLC** ("we," "us," or "our") collects, uses, and protects personal information across our websites, applications, and services, including any third-party platform applications we operate (collectively, the "Services").
 
@@ -28,7 +28,7 @@ This policy applies to:
 - The Coates Media website (`coatesmedia.co`) and any subdomains we operate
 - Marketing automation and advertising services we provide to our clients
 - Third-party platform applications we operate, including but not limited to:
-  - **FADS Lead Sync** — Meta Platforms application (App ID: 963876983267406) that processes Lead Ad submissions for Fred Astaire Dance Studios franchise locations
+  - **Coates Media Connect** — Meta Platforms application (App ID: 963876983267406) that Coates Media operates as an agency integration to process Lead Ad submissions for the client businesses we manage (currently Fred Astaire Dance Studios franchise locations), routing each client's leads only to that client's CRM
   - **Google Ads API integration** — a Google Cloud OAuth application (project `augmented-web-437318-e5`) Coates Media operates as an agency automation platform to monitor, report on, and apply approved updates to client Google Ads campaigns across the accounts our clients authorize
 
 Where an individual app or service has data flows or retention practices that differ from this master policy, those differences are described in the Addenda below.
@@ -180,24 +180,25 @@ We may update this Privacy Policy periodically. The "Last Updated" date at the t
 
 ---
 
-## A. FADS Lead Sync (Meta Platforms App)
+## A. Coates Media Connect (Meta Platforms App)
 
 | Item | Detail |
 |---|---|
-| App name | FADS Lead Sync |
+| App name | Coates Media Connect |
 | Meta App ID | 963876983267406 |
 | Use case | Capture & manage ad leads with Marketing API |
 | Operating entity | Coates Media LLC |
+| Applies to | The client businesses Coates Media manages (general-purpose, not client-specific); currently Fred Astaire Dance Studios franchise locations |
 
-**What it does:** Receives Meta (Facebook / Instagram) Lead Ad submissions from Pages associated with Fred Astaire Dance Studios franchise locations, and routes that data to the FADS Zoho CRM so the relevant studio can follow up.
+**What it does:** Receives Meta (Facebook / Instagram) Lead Ad submissions from Pages of the clients Coates Media manages, and routes each submission to that client's CRM so the relevant business can follow up. Lead data submitted on one client's Pages flows only to that client's CRM.
 
 **Data collected:** First name, last name, email, phone, any additional questions configured on the lead form, and Meta-supplied identifiers (`leadgen_id`, `form_id`, `ad_id`, `campaign_id`, Page ID).
 
-**Data flow:** Meta → `ops.coatesmedia.co` (transient, <60 seconds) → Zoho CRM (persistent storage). Encryption in transit and at rest.
+**Data flow:** Meta → `ops.coatesmedia.co` (transient, <60 seconds) → the relevant client's Zoho CRM (persistent storage). Encryption in transit and at rest.
 
-**Authorized Pages:** Currently the eleven FADS Pages listed in the Application's Terms of Service. Additional Pages require explicit authorization.
+**Authorized Pages:** Only Pages a client explicitly authorizes Coates Media to manage (via Meta Lead Access Manager / partner sharing). The current authorized set is the eleven Fred Astaire Dance Studios Pages listed in the Application's Terms of Service. Adding a client or Page requires explicit authorization.
 
-**Deletion process specific to this app:** See https://coatesmedia.co/fads-lead-sync/data-deletion. Includes Meta Data Deletion Callback support at `https://ops.coatesmedia.co/webhook/fads.meta.deletion`.
+**Deletion process specific to this app:** See https://coatesmedia.co/data-deletion. Includes Meta Data Deletion Callback support at `https://ops.coatesmedia.co/webhook/fads.meta.deletion`.
 
 ---
 
@@ -230,7 +231,7 @@ We may update this Privacy Policy periodically. The "Last Updated" date at the t
 | Intended use | Agency automation platform — automated campaign monitoring, change detection, performance reporting, and approved campaign updates (budget, bid, status, targeting) via an approval queue |
 | Applies to | All clients whose Google advertising Coates Media manages (general-purpose, not client-specific) |
 
-**What it does:** With the client's authorization (Google OAuth), Coates Media connects to the client's Google Ads account to **read** performance data for monitoring, change detection, and reporting, and to **apply approved campaign updates** (budget, bid, status, targeting) on the client's behalf — changes are staged through an approval queue before they are written. This integration is general-purpose across all clients for whom we run Google advertising (unlike the FADS Lead Sync Meta app, which is specific to one client).
+**What it does:** With the client's authorization (Google OAuth), Coates Media connects to the client's Google Ads account to **read** performance data for monitoring, change detection, and reporting, and to **apply approved campaign updates** (budget, bid, status, targeting) on the client's behalf — changes are staged through an approval queue before they are written. This integration is general-purpose across all clients for whom we run Google advertising.
 
 **Google data accessed (OAuth scope):** `https://www.googleapis.com/auth/adwords` — read and management (write) access to the authorizing account's Google Ads data, including campaign, ad group, ad, and keyword performance, account structure, conversion and attribution metrics, and related user-level advertising data.
 

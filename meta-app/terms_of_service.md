@@ -1,6 +1,6 @@
 # Terms of Service — Coates Media
 
-**Last Updated:** 2026-05-28
+**Last Updated:** 2026-06-03
 
 These Terms of Service ("Terms") govern your use of services provided by **Coates Media LLC** ("we," "us," or "our"), including our websites, marketing automation services, and third-party platform applications we operate (collectively, the "Services").
 
@@ -24,7 +24,7 @@ By using the Services, you agree to these Terms. If you do not agree, do not use
 Coates Media provides marketing automation, lead management, advertising performance, and CRM integration services to clients, including franchise networks and small-to-mid-sized businesses. Specific services and applications operated by Coates Media may include, without limitation:
 
 - Marketing automation infrastructure (`ops.coatesmedia.co`)
-- Third-party platform applications (e.g., FADS Lead Sync on Meta Platforms)
+- Third-party platform applications (e.g., Coates Media Connect on Meta Platforms)
 - Custom integrations between client CRM, advertising, and analytics platforms
 
 App-specific terms, where they differ from these master Terms, are described in the Addenda at the end of this document.
@@ -59,7 +59,7 @@ Use of the Services for any other purpose — including but not limited to harve
 
 Each Service we operate is scoped to specific clients and assets. Adding new clients, additional ad accounts, or new business assets to a Service requires explicit written authorization by Coates Media and the client.
 
-For app-specific scope (e.g., the eleven Fred Astaire Dance Studios Pages connected to FADS Lead Sync), see the Addenda.
+For app-specific scope (e.g., the Pages connected to Coates Media Connect, currently the eleven Fred Astaire Dance Studios Pages), see the Addenda.
 
 ---
 
@@ -131,18 +131,19 @@ We may update these Terms from time to time. Material changes will be communicat
 
 ---
 
-## A. FADS Lead Sync (Meta Platforms App)
+## A. Coates Media Connect (Meta Platforms App)
 
 | Item | Detail |
 |---|---|
-| App name | FADS Lead Sync |
+| App name | Coates Media Connect |
 | Meta App ID | 963876983267406 |
+| Applies to | The client businesses Coates Media manages; currently Fred Astaire Dance Studios franchise locations |
 
-**Authorized Pages:** The Services include receiving Meta Lead Ad submissions from the following eleven Fred Astaire Dance Studios Pages: Cypress, Champions, Memorial, Stone Oak, Alamo Heights, Richmond, Brownsville, Atlanta Midtown, Duluth, Design District, River Oaks. Adding additional Pages requires explicit authorization by Coates Media and the studio operator, including Lead Access Manager grants in Meta Business Suite.
+**Authorized Pages:** The Services include receiving Meta Lead Ad submissions from the Pages a client authorizes Coates Media to manage. The current authorized set is the following eleven Fred Astaire Dance Studios Pages: Cypress, Champions, Memorial, Stone Oak, Alamo Heights, Richmond, Brownsville, Atlanta Midtown, Duluth, Design District, River Oaks. Adding additional clients or Pages requires explicit authorization by Coates Media and the client (page operator), including Lead Access Manager grants or partner sharing in Meta Business Suite.
 
-**Data flow:** Lead data flows from Meta through `ops.coatesmedia.co` (transient, less than 60 seconds, no persistent storage) and into the FADS Zoho CRM. Each studio's staff has access only to leads originating from their own Page.
+**Data flow:** Lead data flows from Meta through `ops.coatesmedia.co` (transient, less than 60 seconds, no persistent storage) and into the relevant client's Zoho CRM. Each client location's staff has access only to leads originating from their own Page.
 
-**Service-specific limitation of liability:** Liability for FADS Lead Sync specifically is limited to the lesser of $100 or the fees paid for the Service. The Service is provided to FADS franchise locations under Coates Media's master agreement with the franchise; no separate fees are paid for the application itself.
+**Service-specific limitation of liability:** Liability for Coates Media Connect specifically is limited to the lesser of $100 or the fees paid for the Service. The Service is provided to each client under Coates Media's agreement with that client; no separate fees are paid for the application itself.
 
 ---
 
