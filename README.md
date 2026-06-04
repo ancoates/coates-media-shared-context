@@ -8,14 +8,13 @@ Single source of truth for content consumed by multiple Coates Media surfaces.
 - `business-structure.md` — entities, infrastructure ownership, legal posture
 - `working-style.md` — how Lexi expects agents and humans to communicate
 - `coates-media-schema.md` — the Coates Media agency-level schema (clients, projects, ops)
-- `meta-app/` — Meta App Submission docs (privacy policy, ToS, data deletion, app review checklist). These render as live pages on `coatesmedia.co` and as the Meta App's required URLs.
 
 ## Consumers (downstream repos that submodule this)
 
 | Consumer | Mount path in consumer | Used for |
 |---|---|---|
 | `coates-media-ops` | `global-context/` | AI agent context, decision-making, registries |
-| `coatesmedia-web` | `shared-context/` | Astro build inputs — renders brand info + (Sprint 2) live legal pages on `coatesmedia.co` |
+| `coatesmedia-web` | `shared-context/` | Astro build inputs — `brand.md` + `coates-media-schema.md` (legal pages are owned natively by that repo, not sourced here) |
 
 ## Update workflow
 
@@ -28,14 +27,19 @@ The `platform-architect` agent owns this propagation workflow. See `coates-media
 
 ## Why this repo exists
 
-Before this, brand/legal content was duplicated:
+Before this, brand content was duplicated:
 - `~/Documents/Business/Coates Media/Claude/AIContext/brand.md` (local agent context)
 - `coatesmedia-web/AIContext/brand.md` (Astro build input)
-- `~/Documents/Business/Coates Media/Claude/MetaApp_Submission/privacy_policy.md` (local stash)
-- `coatesmedia-web/MetaApp_Submission/privacy_policy.md` (Astro build input, deployed)
-- `Zoho One - FADS/Sprint2_AttributionFix/MetaApp_Submission/privacy_policy.md` (FADS-Sprint2 draft)
 
 Drift was inevitable. Now there's one source. The legacy local mirrors get archived during the `coates-media-ops` monorepo migration.
+
+> **Legal docs note (2026-06-04):** the Meta App legal docs (privacy policy, ToS,
+> data-deletion instructions) used to live here under `meta-app/`. They were
+> relocated into the `coatesmedia-web` repo (`src/content/legal/` + `legal/`)
+> because the website was the only thing that rendered them — keeping them in a
+> shared submodule only created copy-and-sync drift. The Meta App Review checklist
+> moved to `coates-media-ops` (`clients/coates-media-internal/assets/meta-app/`).
+> This repo now holds brand + schema + working-style only.
 
 ## What does NOT belong here
 

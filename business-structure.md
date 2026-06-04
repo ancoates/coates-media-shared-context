@@ -35,9 +35,9 @@
 _(fill in. Pointer references only — never put actual account numbers in any repo. Use 1Password / Bitwarden / similar.)_
 
 ## Legal / compliance posture
-- **Privacy policy:** master policy at `coatesmedia.co/privacy`, source in this repo at `meta-app/privacy_policy.md`
-- **Terms of service:** at `coatesmedia.co/terms`, source at `meta-app/terms_of_service.md`
-- **Data deletion:** at `coatesmedia.co/data-deletion`, source at `meta-app/data_deletion_instructions.md`
+- **Privacy policy:** master policy at `coatesmedia.co/privacy`, source in the `coatesmedia-web` repo at `src/content/legal/privacy.md`
+- **Terms of service:** at `coatesmedia.co/terms`, source at `coatesmedia-web` `src/content/legal/terms.md`
+- **Data deletion:** at `coatesmedia.co/data-deletion`, source at `coatesmedia-web` `src/content/legal/data-deletion.md` (long-form procedure: `coatesmedia-web` `legal/data_deletion_instructions.md`)
 - _(fill in: contracts/SOWs convention, NDA handling, etc.)_
 
 ## Notes for AI agents reading this
